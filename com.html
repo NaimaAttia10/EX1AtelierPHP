@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/com.css" rel="stylesheet">
+
+    <title>Sandwich</title>
+</head>
+<body>
+    <form enctype="multipart/form-data" action="http://localhost:8000/index.php" method="post" >
+        <input type="text" name="nom" placeholder="Nom" required>
+        <input type="text" name="prenom" placeholder="Prenom" required>
+        <input type="number" name="nb" required>
+        <textarea name="adresse" cols="30" rows="1" required></textarea>   
+        <select name="type">
+            <option value="Viande">Viande</option>
+            <option value="Poulet">Poulet</option>
+            <option value="Escalope">Escalope</option>
+        </select>
+        <input type="hidden" value="0" name="harissa">
+        <div><input type="checkbox" value="1" name="harissa">Harissa</div>
+        <input type="hidden" value="0" name="salade">
+        <div><input type="checkbox" value="1" name="salade">Salade</div>
+        <input type="hidden" value="0" name="mayo">
+        <div><input type="checkbox" value="1" name="mayo">Mayo</div>
+        <div>CIN : <input type="textarea" name="cin"></div>
+        <button type="submit" value="submit" name="submit">Envoyer</button>
+    </form>
+</body>
+</html>

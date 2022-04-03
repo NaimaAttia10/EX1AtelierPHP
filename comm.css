@@ -1,0 +1,13 @@
+body{
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+th,td,table{
+    border: 3px solid rgb(12, 89, 233);
+    text-align: center;
+}
+th,td{
+    padding: 2px 4px;
+}
